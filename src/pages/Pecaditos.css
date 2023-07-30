@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  min-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Box {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;  
+}
+
+.contentCard {
+  width: 90%;
+}
