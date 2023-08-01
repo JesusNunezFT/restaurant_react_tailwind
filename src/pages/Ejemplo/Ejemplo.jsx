@@ -1,4 +1,5 @@
 import pasabocas from "../../imagen/pasabocas.jpg";
+import entrada from "../../imagen/portadaEntrada.jpeg";
 import { useState } from "react";
 import MyModal from "./MyModal/MyModal";
 
@@ -18,6 +19,13 @@ const Ejemplo = () => {
         alt="Imagen"
         className="cursor-pointer w-20"
         onClick={() => handleModal(pasabocas)}
+      />
+      <br />
+      <img
+        src={entrada}
+        alt="Imagen"
+        className="cursor-pointer w-20"
+        onClick={() => handleModal(entrada)}
       />
 
       {modalOpen && (
