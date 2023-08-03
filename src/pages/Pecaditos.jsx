@@ -19,14 +19,14 @@ const Pecaditos = () => {
       >
         <div className="contentCart m-3  max-w-full max-h-full bg-white bg-auto rounded-xl ">
           <img className="max-w-full rounded-t-xl max-h-full" src={entrada} alt="logo" />
-          <div className="infoPlat flex flex-row">
-            <img className="imgPlat m-5 w-20 h-20 rounded-xl" src={pasabocas} alt=" " />
-            <div>
-              <div className="flex flex-row m-5 justify-around">
-                <h1 className="font-extrabold text-l mr-2">Deditos Caceros</h1>
-                <h3 className="text-red text-xl font-semibold">$7000</h3>
+          <div className="infoPlat flex flex-row ms:justify-start items-center md:justify-evenly m-1 ">
+            <img className="imgPlat m-3  w-20 h-20 rounded-xl" src={pasabocas} alt=" " />
+            <div className="md:flex md:flex-row md:items-center md:center">
+              <div className="flex flex-col items-center mr-5 justify-evenly">
+                <h1 className="font-extrabold md:text-l sm:text-xs m-1">Deditos Caceros</h1>
+                <h3 className="text-red  text-xl font-extrabold m-1">$7.000</h3>
               </div>
-              <h2 className="flex flex-row m-5" >Ricos deditos relleno de queso </h2>
+              <h2 className="flex flex-row m-2" >Lorem ipsum dolor sit amet, consectetur</h2>
             </div>
             
           </div>
@@ -34,18 +34,18 @@ const Pecaditos = () => {
             <img className="imgPlat m-5 w-20 h-20 rounded-xl" src={pasabocas} alt=" " />
             <div>
               <div className="flex flex-row m-5 justify-around">
-                <h1 className="font-extrabold text-l mr-2">Deditos Caceros</h1>
-                <h3 className="text-red text-xl font-semibold">$7000</h3>
+                <h1 className="font-extrabold text-l mr-2">Carne al Carbon</h1>
+                <h3 className="text-red text-xl font-semibold">$28.000</h3>
               </div>
-              <h2 className="flex flex-row m-5" >Ricos deditos relleno de queso </h2>
+              <h2 className="flex flex-row m-5" >Deliciosa pechuga a la plancha  </h2>
             </div>            
           </div>
           <div className="infoPlat flex flex-row">
             <img className="imgPlat m-5 w-20 h-20 rounded-xl" src={pasabocas} alt=" " />
             <div>
               <div className="flex flex-row m-5 justify-around">
-                <h1 className="font-extrabold text-l mr-2">Deditos Caceros</h1>
-                <h3 className="text-red text-xl font-semibold">$7000</h3>
+                <h1 className="font-extrabold text-l mr-2">Pollo a la plancha</h1>
+                <h3 className="text-red text-xl font-semibold">$15.000</h3>
               </div>
               <h2 className="flex flex-row m-5" >Ricos deditos relleno de queso </h2>
             </div>
