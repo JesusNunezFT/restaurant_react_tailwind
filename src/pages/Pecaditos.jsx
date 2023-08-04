@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
 import background from "../imagen/background1.jpg";
-import logo from "../imagen/logo1-removebg-preview.png";
 import entrada from "../imagen/portadaEntrada.jpeg";
 import pasabocas from "../imagen/pasabocas.jpg";
 import Card from "../Componentes/Card";
+import ButtonBack from "../Componentes/ButtonBack";
+import NavBar from "../Componentes/NavBar";
 
 const OBJETOS = [
   {
@@ -35,17 +35,16 @@ const OBJETOS = [
 const Pecaditos = () => {
   return (
     <div>
-      <nav className="flex justify-center items-center max-w-full bg-primary h-28 p-1 ">
-        <img className="w-56 h-28" src={logo} alt="logo" />
-      </nav>
+      <NavBar />
+
       <div
-        className="Box flex flex-col justify-start items-center min-h-screen max-w-7xl "
+        className="flex flex-col justify-start items-center min-h-screen max-w-7xl "
         style={{
           backgroundImage: `url(${background})`,
           filter: "brightness(90%)",
         }}
       >
-        <div className="contentCart m-3  max-w-full max-h-full bg-white bg-auto rounded-xl ">
+        <div className="m-3  max-w-full max-h-full bg-white bg-auto rounded-xl ">
           <img
             className="max-w-full rounded-t-xl max-h-full"
             src={entrada}
@@ -66,11 +65,7 @@ const Pecaditos = () => {
         })}
       </div>
 
-      <Link to="/" className="w-full flex justify-center">
-        <button className="bg-secundary mt-10 mb-7 p-2 w-36 h-10 rounded-3xl shadow-md text-primary font-medium text-lg fixed bottom-0">
-          Back
-        </button>
-      </Link>
+      <ButtonBack />
     </div>
   );
 };
