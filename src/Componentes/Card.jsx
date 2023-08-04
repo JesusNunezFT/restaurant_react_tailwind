@@ -1,8 +1,13 @@
-const Card = ({ src, title, price, description }) => {
+const Card = ({ src, title, price, description, onClick }) => {
   return (
     <div className="grid grid-cols-4 bg-white m-3 rounded-xl">
       <div className="col-span-2 sm:col-span-1 flex align-center p-3">
-        <img className="object-cover rounded-xl" src={src} alt="imagen" />
+        <img
+          className="object-cover rounded-xl"
+          src={src}
+          alt="imagen"
+          onClick={onClick}
+        />
       </div>
       <div className="col-span-2 sm:col-span-3 p-3">
         <p className="font-extrabold md:text-l m-1 text-center">{title}</p>

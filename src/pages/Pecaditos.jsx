@@ -1,11 +1,13 @@
 import background from "../imagen/background1.jpg";
 import entrada from "../imagen/portadaEntrada.jpeg";
-import pasabocas from "../imagen/pasabocas.jpg";
 import Card from "../Componentes/Card";
 import ButtonBack from "../Componentes/ButtonBack";
 import NavBar from "../Componentes/NavBar";
+import { useState } from "react";
+import MyModal from "./Ejemplo/MyModal/MyModal";
+import pasabocas from "../imagen/pasabocas.jpg";
 
-const OBJETOS = [
+const PECADITOS = [
   {
     id: 1,
     src: entrada,
@@ -32,7 +34,16 @@ const OBJETOS = [
   },
 ];
 
+// AQUÍ INICIA EL COMPONENTE:
 const Pecaditos = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [imageSelected, setImageSelected] = useState("");
+
+  const handleModal = (currentImage) => {
+    setImageSelected(currentImage);
+    setModalOpen(!modalOpen);
+  };
+
   return (
     <div>
       <NavBar />
@@ -52,7 +63,7 @@ const Pecaditos = () => {
           />
         </div>
 
-        {OBJETOS.map((objeto) => {
+        {PECADITOS.map((objeto) => {
           return (
             <Card
               key={objeto.id}
@@ -60,12 +71,17 @@ const Pecaditos = () => {
               title={objeto.title}
               price={objeto.price}
               description={objeto.description}
+              onClick={() => handleModal(objeto.src)}
             />
           );
         })}
       </div>
 
       <ButtonBack />
+
+      {modalOpen && (
+        <MyModal handleModal={handleModal} imageSelected={imageSelected} />
+      )}
     </div>
   );
 };
