@@ -7,7 +7,7 @@ export default function App() {
     <div>
       <NavBar />
       <div
-        className="Box flex flex-col justify-start items-center  min-h-screen max-w-7xl "
+        className="flex flex-col justify-start items-center  min-h-screen w-full bg-no-repeat bg-cover bg-center"
         style={{
           backgroundImage: `url(${background})`,
           filter: "brightness(90%)",

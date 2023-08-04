@@ -49,7 +49,7 @@ const Pecaditos = () => {
       <NavBar />
 
       <div
-        className="flex flex-col justify-start items-center min-h-screen max-w-7xl "
+        className="flex flex-col justify-start items-center min-h-screen max-w-full "
         style={{
           backgroundImage: `url(${background})`,
           filter: "brightness(90%)",

@@ -9,7 +9,7 @@ const Especiales = () => {
         <img className="w-56 h-28" src={logo} alt="logo" />
       </nav>
       <div
-        className="Box flex flex-col justify-start items-center  min-h-screen max-w-7xl "
+        className="Box flex flex-col justify-start items-center  min-h-screen max-w-full "
         style={{
           backgroundImage: `url(${background})`,
           filter: "brightness(90%)",
