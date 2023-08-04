@@ -1,4 +1,3 @@
-import "./App.css";
 import background from "./imagen/imagen2.png";
 import logo from "./imagen/logo1-removebg-preview.png";
 import { Link } from "react-router-dom";
