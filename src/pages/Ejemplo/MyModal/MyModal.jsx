@@ -17,8 +17,8 @@ const MyModal = ({ handleModal, imageSelected }) => {
       <img
         src={imageSelected}
         alt="Imagen en modal"
-        style={{ maxHeight: "90vh", maxWidth: "90vw" }}
-      />
+        style={{ maxHeight: "90vh", maxWidth: "90vw" }}        
+      />,
     </div>
   );
 };

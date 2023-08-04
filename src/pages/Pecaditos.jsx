@@ -14,7 +14,7 @@ const PECADITOS = [
     title: "Deditos Caceros",
     price: "$4.000",
     description:
-      "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus consequatur corrupti sequi in explicabo, provident aliquam veniam, minus nihil dict necessitatibus quae molestiae quisquam deleniti corporis a quod voluptatem",
+      "Lorem ipsum dolor sit amet",
   },
   {
     id: 2,
@@ -29,6 +29,14 @@ const PECADITOS = [
     src: pasabocas,
     title: "Otro",
     price: "$3.750",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus consequatur corrupti sequi in explicabo, provident aliquam veniam, minus nihil dict necessitatibus quae molestiae quisquam deleniti corporis a quod voluptatem",
+  },
+  {
+    id: 4,
+    src: pasabocas,
+    title: "Otro 3",
+    price: "$25.888",
     description:
       "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus consequatur corrupti sequi in explicabo, provident aliquam veniam, minus nihil dict necessitatibus quae molestiae quisquam deleniti corporis a quod voluptatem",
   },
