@@ -8,9 +8,9 @@ const MyModal = ({ handleModal, objetoSelected }) => {
         <img
           src={objetoSelected.src}
           alt="Imagen en modal"
-          className="h-full rounded-2xl"
+          className="w-full rounded-2xl object-contain"
         />
-        <div className="absolute bottom-20 text-white bg-gray px-5 py-2 rounded-2xl">
+        <div className="absolute bottom-20 text-white bg-gray px-5 py-2 rounded-2xl max-w-[80vw]">
           {objetoSelected.description}
         </div>
 
