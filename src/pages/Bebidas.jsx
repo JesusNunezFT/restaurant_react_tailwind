@@ -47,10 +47,10 @@ const BEBIDAS = [
 
 const Bebidas = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [imageSelected, setImageSelected] = useState("");
+  const [objetoSelected, setObjetoSelected] = useState(null);
 
-  const handleModal = (currentImage) => {
-    setImageSelected(currentImage);
+  const handleModal = (objetoSelected) => {
+    setObjetoSelected(objetoSelected);
     setModalOpen(!modalOpen);
   };
   return (
@@ -78,7 +78,7 @@ const Bebidas = () => {
               title={objeto.title}
               price={objeto.price}
               description={objeto.description}
-              onClick={() => handleModal(objeto.src)}
+              onClick={() => handleModal(objeto)}
             />
           );
         })}
@@ -87,7 +87,7 @@ const Bebidas = () => {
       <ButtonBack />
 
       {modalOpen && (
-        <MyModal handleModal={handleModal} imageSelected={imageSelected} />
+        <MyModal handleModal={handleModal} objetoSelected={objetoSelected} />
       )}
     </div>
   );

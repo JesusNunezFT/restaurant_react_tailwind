@@ -45,10 +45,10 @@ const PECADITOS = [
 // AQUÍ INICIA EL COMPONENTE:
 const Pecaditos = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [imageSelected, setImageSelected] = useState("");
+  const [objetoSelected, setObjetoSelected] = useState(null);
 
-  const handleModal = (currentImage) => {
-    setImageSelected(currentImage);
+  const handleModal = (objeto) => {
+    setObjetoSelected(objeto);
     setModalOpen(!modalOpen);
   };
 
@@ -79,7 +79,7 @@ const Pecaditos = () => {
               title={objeto.title}
               price={objeto.price}
               description={objeto.description}
-              onClick={() => handleModal(objeto.src)}
+              onClick={() => handleModal(objeto)}
             />
           );
         })}
@@ -88,7 +88,7 @@ const Pecaditos = () => {
       <ButtonBack />
 
       {modalOpen && (
-        <MyModal handleModal={handleModal} imageSelected={imageSelected} />
+        <MyModal handleModal={handleModal} objetoSelected={objetoSelected} />
       )}
     </div>
   );

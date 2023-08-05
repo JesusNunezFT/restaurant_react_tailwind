@@ -47,10 +47,10 @@ const ENTRADAS = [
 
 const Entradas = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [imageSelected, setImageSelected] = useState("");
+  const [objetoSelected, setObjetoSelected] = useState(null);
 
-  const handleModal = (currentImage) => {
-    setImageSelected(currentImage);
+  const handleModal = (currentObjeto) => {
+    setObjetoSelected(currentObjeto);
     setModalOpen(!modalOpen);
   };
   return (
@@ -78,7 +78,7 @@ const Entradas = () => {
               title={objeto.title}
               price={objeto.price}
               description={objeto.description}
-              onClick={() => handleModal(objeto.src)}
+              onClick={() => handleModal(objeto)}
             />
           );
         })}
@@ -87,7 +87,7 @@ const Entradas = () => {
       <ButtonBack />
 
       {modalOpen && (
-        <MyModal handleModal={handleModal} imageSelected={imageSelected} />
+        <MyModal handleModal={handleModal} objetoSelected={objetoSelected} />
       )}
     </div>
   );
